@@ -132,7 +132,7 @@ for theVar, varTheme,varName,vizID in zip(theVars,varThemes,varNames,vizIDs):
 
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="../../../" class="button all">Home</a>
             </button>
-        <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="../../../data/download.html" class="button all">All Data</a>
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="https://nygeog.cartodb.com/tables/nycb2010_treesdata/public" class="button all">All Data</a>
             </button>
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1"><a href="" class="button all">Reset</a>
             </button>
