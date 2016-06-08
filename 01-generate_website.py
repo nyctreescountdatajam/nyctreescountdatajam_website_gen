@@ -14,18 +14,18 @@ varThemes = ['cttrees1995',
             'pctchadn9515'
             ]
 
-varNames = ['Count Trees 1995 in Census Block 2010',
-  'Count Trees 2005 in Census Block 2010',
-  'Count Trees 2015 in Census Block 2010',
-  'Percent Change in Count Trees 1995-2005 in Census Block 2010',
-  'Percent Change in Count Trees 2005-2015 in Census Block 2010',
-  'Percent Change in Count Trees 1995-2015 in Census Block 2010',
-  'Tree Density per Square Mile 1995 in Census Block 2010',
-  'Tree Density per Square Mile 2005 in Census Block 2010',
-  'Tree Density per Square Mile 2015 in Census Block 2010',
-  'Percent Change in Tree Density per Square Mile 1995-2005 in Census Block 2010',
-  'Percent Change in Tree Density per Square Mile 2005-2015 in Census Block 2010',
-  'Percent Change in Tree Density per Square Mile 1995-2015 in Census Block 2010'
+varNames = ['1995 Count Trees in Census Block',
+  '2005 Count Trees in Census Block',
+  '2015 Count Trees in Census Block',
+  '1995-2005 Percent Change in Count Trees in Census Block',
+  '2005-2015 Percent Change in Count Trees in Census Block',
+  '1995-2015 (20 years) Percent Change in Count Trees in Census Block',
+  '1995 Tree Density per Square Mile in Census Block',
+  '2005 Tree Density per Square Mile in Census Block',
+  '2015 Tree Density per Square Mile in Census Block',
+  '1995-2005 Percent Change in Tree Density per Square Mile in Census Block',
+  '2005-2015 Percent Change in Tree Density per Square Mile in Census Block',
+  '1995-2015 (20 years) Percent Change in Tree Density per Square Mile in Census Block'
             ]
 
 vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/501f4b3e-2a86-11e6-9a28-0ecd1babdde5/viz.json',
@@ -138,7 +138,7 @@ for theVar, varTheme,varName,vizID in zip(theVars,varThemes,varNames,vizIDs):
             </button>
     
           <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Variables
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Street Tree Census 1995-2015 Variables
             <span class="caret"></span></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
               '''+dropdownHTML+'''
