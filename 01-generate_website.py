@@ -10,8 +10,9 @@ varThemes = ['cttrees1995',
             'treesdn2005',
             'treesdn2015',
             'pctchange9505den',
-            'pctchange9505den',
-            'pctchange9505den'
+            'pctchange0515den',
+            'pctchange9515den',
+            'pctchange9515den_tree_million'
             ]
 
 varNames = ['Count Trees <strong>1995</strong> in Census Block',
@@ -25,7 +26,8 @@ varNames = ['Count Trees <strong>1995</strong> in Census Block',
   'Tree Count Density <strong>2015</strong> per Square Mile in Census Block',
   'Percent Change in Tree Count Density <strong>1995 -> 2005</strong> per Square Mile in Census Block',
   'Percent Change in Tree Count Density <strong>2005 -> 2015</strong> per Square Mile in Census Block',
-  'Percent Change in Tree Count Density <strong>1995 -> 2015 (20 years)</strong> per Square Mile in Census Block'
+  'Percent Change in Tree Count Density <strong>1995 -> 2015 (20 years)</strong> per Square Mile in Census Block',
+  'Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts'
             ]
 
 vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/285d1c84-2dba-11e6-8a62-0ea31932ec1d/viz.json',
@@ -41,8 +43,10 @@ vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/285d1c84-2dba-11e6-8a62-0ea31
             'https://nygeog.cartodb.com/api/v2/viz/f5811e84-2dbc-11e6-9998-0ecfd53eb7d3/viz.json',
 
             'https://nygeog.cartodb.com/api/v2/viz/ca8aced6-2dbd-11e6-bf76-0e5db1731f59/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/ec0f6d06-2a88-11e6-8d58-0ecfd53eb7d3/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/074fe1c2-2a89-11e6-94e1-0ecd1babdde5/viz.json']
+            'https://nygeog.cartodb.com/api/v2/viz/9e04739c-2dbf-11e6-b7d7-0e31c9be1b51/viz.json',
+            'https://nygeog.cartodb.com/api/v2/viz/1760d3e8-2dc0-11e6-92cc-0e674067d321/viz.json',
+
+            'https://nygeog.cartodb.com/api/v2/viz/701fd574-2dc0-11e6-8a62-0ea31932ec1d/viz.json']
    
 api_pre = 'https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_'
 
@@ -79,7 +83,8 @@ theVars = [['count1995'],
   ['treedensqmi2015'],
   ['pctchange9505den'],
   ['pctchange0515den'],
-  ['pctchange9515den']]
+  ['pctchange9515den'],
+  ['count1995','count2015','pctchange9515den']]
 
 dropdownStuff = []
 
@@ -90,6 +95,8 @@ for i, varTheme, varName in zip(range(19), varThemes, varNames):
         preHtmlText = '<strong> Tree Density (trees per square mile)</strong>'
     elif i == 6:
         preHtmlText = '<strong> Percent Change in Tree Density (trees per square mile)</strong>'
+    elif i == 9:
+        preHtmlText = '<strong> Percent Change in Tree Density (trees per square mile) with Counts of Trees</strong>'
     else:
         preHtmlText = '' #''
     htmlText = preHtmlText + '<li role="presentation"><a href="'+varTheme+'.html" id="'+varTheme+'" class="button '+varTheme+'">'+varName+'</a></li>' 
@@ -176,7 +183,7 @@ for varTheme,varName,vizID in zip(varThemes,varNames,vizIDs):
       // initiate leaflet map
       map = new L.Map('map', { 
         center: [40.705,-74.00], 
-        zoom: 11,
+        zoom: 12,
         layers: [toggler]
       })
       //L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
