@@ -15,17 +15,17 @@ varThemes = ['cttrees1995',
             ]
 
 varNames = ['<strong>1995</strong> Count Trees in Census Block',
-  '2005 Count Trees in Census Block',
-  '2015 Count Trees in Census Block',
-  '1995-2005 Percent Change in Count Trees in Census Block',
-  '2005-2015 Percent Change in Count Trees in Census Block',
-  '1995-2015 (20 years) Percent Change in Count Trees in Census Block',
-  '1995 Tree Density per Square Mile in Census Block',
-  '2005 Tree Density per Square Mile in Census Block',
-  '2015 Tree Density per Square Mile in Census Block',
-  '1995-2005 Percent Change in Tree Density per Square Mile in Census Block',
-  '2005-2015 Percent Change in Tree Density per Square Mile in Census Block',
-  '1995-2015 (20 years) Percent Change in Tree Density per Square Mile in Census Block'
+  '<strong>2005</strong> Count Trees in Census Block',
+  '<strong>2015</strong> Count Trees in Census Block',
+  '<strong>1995-2005</strong> Percent Change in Count Trees in Census Block',
+  '<strong>2005-2015</strong> Percent Change in Count Trees in Census Block',
+  '<strong>1995-2015 (20 years)</strong> Percent Change in Count Trees in Census Block',
+  '<strong>1995</strong> Tree Density per Square Mile in Census Block',
+  '<strong>2005</strong> Tree Density per Square Mile in Census Block',
+  '<strong>2015</strong> Tree Density per Square Mile in Census Block',
+  '<strong>1995-2005</strong> Percent Change in Tree Density per Square Mile in Census Block',
+  '<strong>2005-2015</strong> Percent Change in Tree Density per Square Mile in Census Block',
+  '<strong>1995-2015</strong> (20 years) Percent Change in Tree Density per Square Mile in Census Block'
             ]
 
 vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/501f4b3e-2a86-11e6-9a28-0ecd1babdde5/viz.json',
@@ -85,13 +85,9 @@ dropdownStuff = []
 
 for i, varTheme, varName in zip(range(19), varThemes, varNames):
     if i == 0:
-        preHtmlText = '' #'<strong>Built Environment</strong>'
+        preHtmlText = '<strong>Count Trees</strong>'
     elif i == 3:
-        preHtmlText = '' #'<strong>Social Environment</strong>'
-    elif i == 11:
-        preHtmlText = '' #'<strong>Safety</strong>'
-    elif i == 16:
-        preHtmlText = '' #'<strong>Businesses Environment</strong>'
+        preHtmlText = '<strong>Tree Density (trees per square mile)</strong>'
     else:
         preHtmlText = '' #''
     htmlText = preHtmlText + '<li role="presentation"><a href="'+varTheme+'.html" id="'+varTheme+'" class="button '+varTheme+'">'+varName+'</a></li>' 
