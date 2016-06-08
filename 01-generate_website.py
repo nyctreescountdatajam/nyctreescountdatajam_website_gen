@@ -14,7 +14,7 @@ varThemes = ['cttrees1995',
             'pctchadn9515'
             ]
 
-varNames = ['1995 Count Trees in Census Block',
+varNames = ['<strong>1995</strong> Count Trees in Census Block',
   '2005 Count Trees in Census Block',
   '2015 Count Trees in Census Block',
   '1995-2005 Percent Change in Count Trees in Census Block',
@@ -138,7 +138,7 @@ for theVar, varTheme,varName,vizID in zip(theVars,varThemes,varNames,vizIDs):
             </button>
     
           <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Street Tree Census 1995-2015 Variables
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Street Tree Census 1995-2015 Counts & Density by Census Block
             <span class="caret"></span></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
               '''+dropdownHTML+'''
@@ -152,9 +152,9 @@ for theVar, varTheme,varName,vizID in zip(theVars,varThemes,varNames,vizIDs):
           <!-- <button onclick='location.href="'''+dictUrl+'''"'>'''+varName+''' <strong>Data dictionary</strong></button> -->
           <p></p>
           <p></p>
-          <button onclick='location.href="'''+api_pre+csvUrl+'''"'><strong>Export</strong> '''+varName+''' data as <strong>CSV</strong></button>
+          <button onclick='location.href="'''+api_pre+csvUrl+'''"'>Export '''+varName+''' data as <strong>CSV</strong></button>
           <p></p>
-          <button onclick='location.href="'''+api_pre+shpUrl+'''"'><strong>Export</strong> '''+varName+''' data as <strong>Shapefile</strong></button>
+          <button onclick='location.href="'''+api_pre+shpUrl+'''"'>Export '''+varName+''' data as <strong>Shapefile</strong></button>
        </div>
        <!-- ALL DATA PANEL IS OFF - SEE LEFTPANEL
        <div id='alldata'>
