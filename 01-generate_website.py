@@ -3,44 +3,44 @@ wd = '/Users/danielmsheehan/GitHub/nyctreescountdatajam.github.com/map/'
 varThemes = ['cttrees1995',
             'cttrees2005',
             'cttrees2015',
-            'pctchact9505',
-            'pctchact0515',
-            'pctchact9515',
+            # 'pctchact9505',
+            # 'pctchact0515',
+            # 'pctchact9515',
             'treesdn1995',
             'treesdn2005',
             'treesdn2015',
-            'pctchadn9505',
-            'pctchadn0515',
-            'pctchadn9515'
+            'pctchange9505den',
+            'pctchange9505den',
+            'pctchange9505den'
             ]
 
-varNames = ['<strong>1995</strong> Count Trees in Census Block',
-  '<strong>2005</strong> Count Trees in Census Block',
-  '<strong>2015</strong> Count Trees in Census Block',
-  '<strong>1995-2005</strong> Percent Change in Count Trees in Census Block',
-  '<strong>2005-2015</strong> Percent Change in Count Trees in Census Block',
-  '<strong>1995-2015 (20 years)</strong> Percent Change in Count Trees in Census Block',
-  '<strong>1995</strong> Tree Density per Square Mile in Census Block',
-  '<strong>2005</strong> Tree Density per Square Mile in Census Block',
-  '<strong>2015</strong> Tree Density per Square Mile in Census Block',
-  '<strong>1995-2005</strong> Percent Change in Tree Density per Square Mile in Census Block',
-  '<strong>2005-2015</strong> Percent Change in Tree Density per Square Mile in Census Block',
-  '<strong>1995-2015</strong> (20 years) Percent Change in Tree Density per Square Mile in Census Block'
+varNames = ['Count Trees <strong>1995</strong> in Census Block',
+  'Count Trees <strong>2005</strong> in Census Block',
+  'Count Trees <strong>2015</strong> in Census Block',
+  # 'Percent Change in Count Trees <strong>1995 -> 2005</strong> in Census Block',
+  # 'Percent Change in Count Trees <strong>2005 -> 2015</strong> in Census Block',
+  # 'Percent Change in Count Trees <strong>1995 -> 2015 (20 years)</strong> in Census Block',
+  'Tree Count Density <strong>1995</strong> per Square Mile in Census Block',
+  'Tree Count Density <strong>2005</strong> per Square Mile in Census Block',
+  'Tree Count Density <strong>2015</strong> per Square Mile in Census Block',
+  'Percent Change in Tree Count Density <strong>1995 -> 2005</strong> per Square Mile in Census Block',
+  'Percent Change in Tree Count Density <strong>2005 -> 2015</strong> per Square Mile in Census Block',
+  'Percent Change in Tree Count Density <strong>1995 -> 2015 (20 years)</strong> per Square Mile in Census Block'
             ]
 
-vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/501f4b3e-2a86-11e6-9a28-0ecd1babdde5/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/8e0979c8-2a87-11e6-a159-0e3ff518bd15/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/c0dc2c10-2a87-11e6-852c-0e674067d321/viz.json',
+vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/285d1c84-2dba-11e6-8a62-0ea31932ec1d/viz.json',
+            'https://nygeog.cartodb.com/api/v2/viz/f4d493dc-2dba-11e6-96db-0e31c9be1b51/viz.json',
+            'https://nygeog.cartodb.com/api/v2/viz/2fb72b68-2dbb-11e6-a428-0e5db1731f59/viz.json',
 
-            'https://nygeog.cartodb.com/api/v2/viz/f80c873e-2a87-11e6-a909-0e5db1731f59/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/7ff0a004-2a88-11e6-bd2d-0e787de82d45/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/9c739f1a-2a88-11e6-82a2-0e674067d321/viz.json',
+            # 'https://nygeog.cartodb.com/api/v2/viz/f80c873e-2a87-11e6-a909-0e5db1731f59/viz.json',
+            # 'https://nygeog.cartodb.com/api/v2/viz/7ff0a004-2a88-11e6-bd2d-0e787de82d45/viz.json',
+            # 'https://nygeog.cartodb.com/api/v2/viz/9c739f1a-2a88-11e6-82a2-0e674067d321/viz.json',
 
-            'https://nygeog.cartodb.com/api/v2/viz/249b6bca-2a89-11e6-852c-0e674067d321/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/42780770-2a89-11e6-9b0e-0ecfd53eb7d3/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/5be136a0-2a89-11e6-8388-0e5db1731f59/viz.json',
+            'https://nygeog.cartodb.com/api/v2/viz/8f680cd0-2dbb-11e6-9c65-0ea31932ec1d/viz.json',
+            'https://nygeog.cartodb.com/api/v2/viz/710e5c98-2dbc-11e6-92cc-0e674067d321/viz.json',
+            'https://nygeog.cartodb.com/api/v2/viz/f5811e84-2dbc-11e6-9998-0ecfd53eb7d3/viz.json',
 
-            'https://nygeog.cartodb.com/api/v2/viz/c1b32340-2a88-11e6-8031-0ea31932ec1d/viz.json',
+            'https://nygeog.cartodb.com/api/v2/viz/ca8aced6-2dbd-11e6-bf76-0e5db1731f59/viz.json',
             'https://nygeog.cartodb.com/api/v2/viz/ec0f6d06-2a88-11e6-8d58-0ecfd53eb7d3/viz.json',
             'https://nygeog.cartodb.com/api/v2/viz/074fe1c2-2a89-11e6-94e1-0ecd1babdde5/viz.json']
    
@@ -71,23 +71,25 @@ api_pre = 'https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_'
 theVars = [['count1995'],
   ['count2005'],
   ['count2015'],
-  ['pctchange95_05'],
-  ['pctchange05_15'],
-  ['pctchange95_15'],
+  # ['pctchange95_05'],
+  # ['pctchange05_15'],
+  # ['pctchange95_15'],
   ['treedensqmi1995'],
   ['treedensqmi2005'],
   ['treedensqmi2015'],
-  ['pctchange95_05trdn'],
-  ['pctchange05_15trdn'],
-  ['pctchange95_15trdn']]
+  ['pctchange9505den'],
+  ['pctchange0515den'],
+  ['pctchange9515den']]
 
 dropdownStuff = []
 
 for i, varTheme, varName in zip(range(19), varThemes, varNames):
     if i == 0:
-        preHtmlText = '<strong>Count Trees</strong>'
+        preHtmlText = '<strong> Count Trees</strong>'
     elif i == 3:
-        preHtmlText = '<strong>Tree Density (trees per square mile)</strong>'
+        preHtmlText = '<strong> Tree Density (trees per square mile)</strong>'
+    elif i == 6:
+        preHtmlText = '<strong> Percent Change in Tree Density (trees per square mile)</strong>'
     else:
         preHtmlText = '' #''
     htmlText = preHtmlText + '<li role="presentation"><a href="'+varTheme+'.html" id="'+varTheme+'" class="button '+varTheme+'">'+varName+'</a></li>' 
@@ -183,7 +185,7 @@ for varTheme,varName,vizID in zip(varThemes,varNames,vizIDs):
       //L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       //    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       //}).addTo(map);
-      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
         }).addTo(map);
 
