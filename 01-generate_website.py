@@ -25,7 +25,7 @@ varNames = ['Count Trees <strong>1995</strong> in Census Block',
   'Percent Change in Tree Count Density <strong>1995 -> 2015 (20 years)</strong> per Square Mile in Census Block',
   'Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts',
   'Street Tree Census 1995-2005-2015',
-  'Street Tree Conditions 2015'
+  'Street Tree Conditions 2015 - working on data export'
             ]
 
 vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/285d1c84-2dba-11e6-8a62-0ea31932ec1d/viz.json',
