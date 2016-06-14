@@ -77,7 +77,7 @@ for i, varTheme, varName in zip(range(19), varThemes, varNames):
     elif i == 10:
         preHtmlText = '<strong>Street Tree Census 1995-2005-2015</strong>'
     elif i == 11:
-        preHtmlText = '<strong>Street Tree Conditions'
+        preHtmlText = '<strong>Street Tree Conditions</strong>'
     else:
         preHtmlText = '' #''
     htmlText = preHtmlText + '<li role="presentation"><a href="'+varTheme+'.html" id="'+varTheme+'" class="button '+varTheme+'">'+varName+'</a></li>' 
