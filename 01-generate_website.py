@@ -11,9 +11,9 @@ varThemes = ['cttrees1995',
             'pctchange9515den',
             'pctchange9515den_tree_million',
             'all_trees_1995_2005_2015',
-            'treescon2015',
-            'treescon2015',
-            'treescon2015',
+            'treescon2015'#,
+            # 'treespor2015',
+            # 'treesche2015'
             ]
 
 varNames = ['Count Trees <strong>1995</strong> in Census Block',
@@ -27,9 +27,9 @@ varNames = ['Count Trees <strong>1995</strong> in Census Block',
   'Percent Change in Tree Count Density <strong>1995 -> 2015 (20 years)</strong> per Square Mile in Census Block',
   'Percent Change in Tree Count Den. <strong>1995 -> 2015</strong> per Sq. Mi. in Cen. Blk. w/ Counts',
   'Street Tree Census 1995-2005-2015',
-  'Street Tree Conditions 2015 - working on data export',
-  'Street Tree Conditions 2015 Emp. "Poor" - working on data export',
-  'Street Tree Conditions 2015 "Poor" Hex'
+  'Street Tree Conditions 2015 - working on data export'#,
+  # 'Street Tree Conditions 2015 Emp. "Poor" - working on data export',
+  # 'Street Tree Conditions 2015 "Poor" Hex'
             ]
 
 vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/285d1c84-2dba-11e6-8a62-0ea31932ec1d/viz.json',
@@ -48,9 +48,10 @@ vizIDs   = ['https://nygeog.cartodb.com/api/v2/viz/285d1c84-2dba-11e6-8a62-0ea31
 
             'https://nygeog.cartodb.com/api/v2/viz/fc8e830c-2e3d-11e6-a126-0ecfd53eb7d3/viz.json',
 
-            'https://nygeog.cartodb.com/api/v2/viz/55c4d968-3243-11e6-8f80-0ecfd53eb7d3/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/2c53bb20-373a-11e6-b8d2-0e5db1731f59/viz.json',
-            'https://nygeog.cartodb.com/api/v2/viz/855a44c8-3749-11e6-9875-0e787de82d45/viz.json']
+            'https://nygeog.cartodb.com/api/v2/viz/55c4d968-3243-11e6-8f80-0ecfd53eb7d3/viz.json'#,
+            # 'https://nygeog.cartodb.com/api/v2/viz/2c53bb20-373a-11e6-b8d2-0e5db1731f59/viz.json',
+            # 'https://nygeog.cartodb.com/api/v2/viz/855a44c8-3749-11e6-9875-0e787de82d45/viz.json'
+            ]
    
 api_pre = 'https://nygeog.cartodb.com/api/v2/sql?filename=nycb2010_treesdata_'
 
@@ -66,9 +67,9 @@ theVars = [['count1995'],
   ['pctchange9515den'],
   ['count1995','count2015','pctchange9515den'],
   ['count1995','count2005','count2015'],
-  ['count1995','count2005','count2015'], #replace w/ conditions
-  ['count1995','count2005','count2015'], #replace w/ conditions
-  ['count1995','count2005','count2015'] #replace w/ conditions
+  ['count1995','count2005','count2015']#, #replace w/ conditions
+  # ['count1995','count2005','count2015'], #replace w/ conditions
+  # ['count1995','count2005','count2015'] #replace w/ conditions
   ]
 
 dropdownStuff = []
